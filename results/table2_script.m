@@ -1,6 +1,7 @@
-clear,clear,close all;
+clear
+clc
 load('Resultados_genetico.mat') 
-addpath([pwd '/data']);
+
     
 y = Y(:,1,:);
 y = [y(:,:,1);y(:,:,2);y(:,:,3)];
@@ -21,3 +22,5 @@ Ymatrix = [Ymatrix(:,:,1);Ymatrix(:,:,2);Ymatrix(:,:,3)];
 Xmatrix = x(:,2:end);
 mdl = fitlm(Xmatrix,Ymatrix);
 pvalue=mdl.Coefficients(2:end,4);
+table2_results=[coeficientes_AyudasSociales,pvalue{:,:}];
+clearvars -except table2_results pvalue R2 intercept
