@@ -1,4 +1,5 @@
 clc,clear,close all;
+addpath([pwd '/data']);
 load('datos_Almudena_v4.mat');
 load('DatosSimulaciones_v5.mat');
 load('indicadores_sinteticos_v4.mat');
