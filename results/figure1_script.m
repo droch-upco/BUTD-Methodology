@@ -1,5 +1,4 @@
-clear
-clc
+clear,clc,close all;
 addpath([pwd '/data']);
 load('indicadores_sinteticos_v4.mat')
 
