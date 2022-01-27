@@ -1,7 +1,7 @@
 clear
 clc
 load('Resultados_genetico.mat') 
-
+addpath([pwd '/data']);
     
 y = Y(:,1,:);
 y = [y(:,:,1);y(:,:,2);y(:,:,3)];
