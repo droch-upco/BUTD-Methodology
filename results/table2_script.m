@@ -1,5 +1,4 @@
-clear
-clc
+clear,clc,close all;
 load('Resultados_genetico.mat') 
 
     
@@ -22,5 +21,7 @@ Ymatrix = [Ymatrix(:,:,1);Ymatrix(:,:,2);Ymatrix(:,:,3)];
 Xmatrix = x(:,2:end);
 mdl = fitlm(Xmatrix,Ymatrix);
 pvalue=mdl.Coefficients(2:end,4);
-table2_results=[coeficientes_AyudasSociales,pvalue{:,:}];
-clearvars -except table2_results pvalue R2 intercept
+pvalue=pvalue{:,:};
+table2_results = addvars(ANEXO1_Coef,pvalue);
+table2_results.Properties.VariableNames = {'weight' 'pvalue'};
+clearvars -except table2_results R2 intercept
