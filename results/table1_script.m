@@ -1,6 +1,6 @@
 clear
 clc
-
+addpath([pwd '/data']);
 load('indicadores_sinteticos_v4.mat')
 
 anexo1_ideal = indicador_sintetico_anexo_1;
