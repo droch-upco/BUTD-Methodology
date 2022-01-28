@@ -9,7 +9,7 @@ n_anios=6;
 indicador_sintetico_anexo_1_estimado=NaN(numero_municipios,n_anios);
 X_quitada_nan=X;
 X_quitada_nan(isnan(X_quitada_nan))=0;
-valores_deciles=prctile([1:numero_municipios],[0:10:90])%como luego el orden es descendente,el decil 0 es el 10 y el 9 es el 1
+valores_deciles=prctile([1:numero_municipios],[0:10:90]);%como luego el orden es descendente,el decil 0 es el 10 y el 9 es el 1
 
 for anio=1:n_anios
     indicador_sintetico_anexo_1_estimado(:,anio)=sum(X_quitada_nan(:,:,anio).*coeficientes_AyudasSociales',2);
