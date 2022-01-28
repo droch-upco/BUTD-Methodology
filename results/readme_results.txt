@@ -5,4 +5,4 @@ This subfolder contains:
 Some observations that must be taken into account:
 - "table1_script" generates the tables "summary_yy_means" which contain the information depicted in table 1 for years 2015,2016,2017.
 - "table2_script" generates the table "table2_results" with the weight and the pvalue given for each high frequency indicator selected. It also generates the variables "R2" and "intercept" that provides, respectively, the R-squared and the intercept of the regression.
-- To obtain figure 1 in the same format of the paper, the correspondent script (figure1_script) must be run in Matlab release 2020b or forward. 
+- To obtain figure 2 in the same format of the paper, the correspondent script (figure2_script) must be run in Matlab release 2020b or forward. 
