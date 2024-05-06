@@ -1,6 +1,7 @@
 clear
 clc
 close all
+addpath([pwd '/data']);
 load('Resultados_genetico.mat') 
 
 T = 3;
