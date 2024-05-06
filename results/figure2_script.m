@@ -1,7 +1,7 @@
 clc
 clear
 close all
-
+addpath([pwd '/data']);
 load Resultados_genetico.mat
 load Regression_Results.mat
 
